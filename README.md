@@ -1,2 +1,0 @@
-# PyBits
-Bits of things.
