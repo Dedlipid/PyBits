@@ -8,6 +8,6 @@ def make_shape():
 	t.color(user_color)
 	t.begin_fill()
 	for x in range(sides):
-		t.forward(size);t.left(float((180-(((sides-2)*180)/sides))));
+		t.forward(size);t.left(float((180-(((sides-2)*180.0)/sides))));
 	t.end_fill();t.right(180-(sides*270));
 make_shape()	
