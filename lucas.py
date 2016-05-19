@@ -1,18 +1,19 @@
-def lucas_seq(n):
+def luc():
+    n = input("How Many Lucas Numbers Do You Want? ")
+    a = 2
+    b = 1
     if n==0:
-        return 2       
+        print a
     elif n==1:
-        return 1
-    elif n>1 :
-        print lucas_seq(n-2)
-        print lucas_seq(n-1)
-        return lucas_seq(n-2)+lucas_seq(n-1)
+        print b
+    elif n>=2:
+        print a
+        print b
+        for x in range(2,n):
+            c = a+b
+            print c
+            a=b
+            b=c
     else:
-        print"Dind't work"
-def printlucas_seq():
-    digits_wanted = input("How many Lucas Numbers do you want? ")
-    for x in range(digits_wanted):
-        print lucas_seq(x)
-    print "There you go "+str(digits_wanted)+" Lucas Numbers"
-printlucas_seq()
-
+        print "kabab"
+luc()
