@@ -7,6 +7,7 @@ def luc():
     elif n==1:
         print b
     elif n>=2:
+        print
         print a
         print
         print b
