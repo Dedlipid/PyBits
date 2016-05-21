@@ -8,10 +8,13 @@ def luc():
         print b
     elif n>=2:
         print a
+        print
         print b
+        print
         for x in range(2,n):
             c = a+b
             print c
+            print
             a=b
             b=c
     else:
