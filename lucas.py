@@ -19,7 +19,7 @@ def luc():
                 print
                 a=b
                 b=c
-    except IOError:
+    except NameError,SyntaxError:
         print "That was not a number please try again"
         luc()
 luc()
