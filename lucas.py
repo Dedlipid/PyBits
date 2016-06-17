@@ -19,5 +19,8 @@ def luc():
                 print
                 a=b
                 b=c
+    except IOError:
+        print "That was not a number please try again"
+        luc()
 luc()
 time.sleep(100)
