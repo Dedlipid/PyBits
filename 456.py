@@ -8,16 +8,11 @@ def f(num):
         while num>1:
             if num % 2 ==0:
                 num = num/2
-                ##print "the number is",num
                 steps = steps +1
-                ##print "The steps are",steps
             else :
                 num = num + 1
-                ##print "The number is",num
                 steps = steps +1
-                ##print "The steps are",steps
         print "it took",steps,"Steps" 
-
 def listmaker():
     list_begin=int(raw_input("From what number should the list start? "))
     list_end=int(raw_input("What should be the last item in the list? "))
