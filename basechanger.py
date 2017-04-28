@@ -11,11 +11,10 @@ def f():
       l.extend([n % b])
       n  = (n - (n % b))/b
     l = l[::-1]
-    print temp,"in base 10 is"
-    for i in l:
-      print i,
-    print "in base",temp2
-  c = raw_input("Run again?(y/n)")
-  if c == "y":
+    de = ''.join(str(e) for e in l)
+    de = int(de)
+    print de
+  c = raw_input("Press enter to run again")
+  if c == "":
     f()
 f()
