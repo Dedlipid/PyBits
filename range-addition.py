@@ -1,5 +1,3 @@
-import math
-import time
 def give_sumof_range():
     try:
 
@@ -19,8 +17,6 @@ def give_sumof_range():
         give_sumof_range()
     except (IndexError,ValueError,ValueError):
         give_sumof_range()
-
-        
 give_sumof_range()
 
 
