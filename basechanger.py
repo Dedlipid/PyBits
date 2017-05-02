@@ -7,7 +7,7 @@ def f():
   else:
     while n > 0:
       l.extend([n % b])
-      n  = n/b
+      n  /= b
   l = l[::-1]
   if b <=10:
       l = ''.join(str(e) for e in l)
