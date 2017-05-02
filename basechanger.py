@@ -1,8 +1,6 @@
 def f():
   n=int(raw_input("Enter number "))
   b=int(raw_input("Enter base "))
-  temp = n
-  temp2 = b
   l=[]
   if n == 0 :
     print "0 in any base is 0"
