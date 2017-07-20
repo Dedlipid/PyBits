@@ -7,7 +7,7 @@ def factor(): #This function returns the prime factorial of the inputted number 
 			while n%i == 0 : #Our number may be divisible by a certain factor more then once so we will cover all of them this way
 				n /= i #We will reduce the number by that factor
 				l.append(i) #We will add that factor to our factor list
-		else : #If our number isn't divisible by the current factor we will try the next(**) prime(*) and so on
+		else : #If our number isn't divisible by the current factor we will try the next prime(*) and so on
 			if i == 2 :
 				i += 1
 			else :
