@@ -1,10 +1,10 @@
-def factor():
+def factor(): #This function returns the prime factorial of the inputted number as a list
 
 	l = [] #List of factors, starts out empty
 	
 	n = int(input("Please enter number you need factored: ")) #The number whose factorization we want
 	
-	i = 2 #The first number we will try dividing by(will not always be a prime)
+	i = 2 #The first number we will try dividing by(will not always be a prime(*))
 	
 	while n > 1: #The number one doesnt have any factors other then it self
 	
@@ -29,6 +29,6 @@ def factor():
 	else :
 		factor()
 	
-factor() #We call out factor function
+factor() 
 #(*)We are garunteed that our function won't skip any primes as it is incrementing from smallest to largest numbers and diving 
-#our number or reduced number, by its smallest possible factor(excluding 1), which will always be a prime.
+#our number or reduced number, by its smallest possible factor(excluding 1), makes sure we are dividing by a prime.
