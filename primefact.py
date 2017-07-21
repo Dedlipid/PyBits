@@ -21,8 +21,6 @@ def factor():
 		elif l[i] != l[i-1]:
 			L.append( (str(l[i-1])+"^"+str(counter)))
 			counter = 1
-	print len(L)-1
-	print L
 	for i in range(len(L)):
 		if i <= len(L)-2:
 			print L[i]+" *",
