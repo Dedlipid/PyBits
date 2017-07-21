@@ -21,8 +21,14 @@ def factor():
 		elif l[i] != l[i-1]:
 			L.append( (str(l[i-1])+"^"+str(counter)))
 			counter = 1
-	print L #We print our factors
-	exit = raw_input("Press enter to exit")
+	print len(L)-1
+	print L
+	for i in range(len(L)):
+		if i <= len(L)-2:
+			print L[i]+" *",
+		elif i == len(L)-1:
+			print L[i]
+	exit = raw_input("\n Press enter to exit")
 	if exit == "":
 		pass
 	else :
@@ -30,3 +36,4 @@ def factor():
 factor() #We call out factor function
 #(*)We are garunteed that our function won't skip any primes as it is incrementing from smallest to largest numbers and diving 
 #our number or reduced number, by its smallest possible factor(excluding 1), which will always be a prime.
+
